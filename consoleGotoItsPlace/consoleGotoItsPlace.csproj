@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="exifLib" Version="1.7.0" />
+    <PackageReference Include="jomiunsExtensions" Version="1.1.4" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,6 @@
-﻿var dirPath = args[0];
+﻿using jomiunsExtensions;
+
+var dirPath = args[0];
 Console.Write(dirPath);
 var reader = new ExifLib.ExifReader(dirPath);
 reader.GetTagValue<double[]>(ExifLib.ExifTags.GPSLatitude, out var gpsLatitude);
@@ -12,7 +14,5 @@ var hasil02 = $@"{longArr[0]}°{longArr[1]}'{longArr[2]}""{longRef}";
 var coord = $"{hasil}+{hasil02}";
 var something = $@"https://www.google.com/maps/place/{coord}";
 
-var aPro = new System.Diagnostics.Process();
-aPro.StartInfo.FileName = something;
-aPro.StartInfo.UseShellExecute = true;
-aPro.Start();
+
+something.doShellExecute();
