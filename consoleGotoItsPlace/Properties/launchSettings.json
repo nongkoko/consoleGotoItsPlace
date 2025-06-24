@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "consoleGotoItsPlace": {
+      "commandName": "Project",
+      "commandLineArgs": "\"D:\\kabehDevice\\group1247 10Aug2024-1009\\IMG_20240810_103407.jpg\""
+    }
+  }
+}
